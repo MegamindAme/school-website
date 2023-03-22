@@ -10,7 +10,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 
 // the path(s) that should be cleaned
-let pathsToClean = ['frontend']
+let pathsToClean = ['src']
 
 // the clean options to use
 let cleanOptions = {
@@ -26,13 +26,13 @@ module.exports = {
   },
   entry: {
     libs: [
-      './src/js/libs.js',
-      './src/sass/libs.scss'
+      '../src/js/libs.js',
+      '../src/sass/libs.scss'
     ]
   },
   output: {
     filename: 'js/[name].js',
-    path: path.resolve(__dirname, 'frontend')
+    path: path.resolve(__dirname, 'src')
   },
   module: {
     rules: [
@@ -67,23 +67,23 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, 'src/img'),
-        to: path.resolve(__dirname, 'frontend/img'),
+        to: path.resolve(__dirname, 'src/img'),
       },
       {
         from: path.resolve(__dirname, 'src/flags'),
-        to: path.resolve(__dirname, 'frontend/flags'),
+        to: path.resolve(__dirname, 'src/flags'),
       },
       {
         from: path.resolve(__dirname, 'src/fonts'),
-        to: path.resolve(__dirname, 'frontend/fonts'),
+        to: path.resolve(__dirname, 'src/fonts'),
       },
       {
         from: path.resolve(__dirname, 'src/rs-plugin'),
-        to: path.resolve(__dirname, 'frontend/rs-plugin'),
+        to: path.resolve(__dirname, 'src/rs-plugin'),
       },
       {
         from: path.resolve(__dirname, 'src/uploads'),
-        to: path.resolve(__dirname, 'frontend/uploads'),
+        to: path.resolve(__dirname, 'src/uploads'),
       }
     ], {}),
     new webpack.LoaderOptionsPlugin({

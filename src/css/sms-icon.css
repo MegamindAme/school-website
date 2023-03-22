@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "sms-font";
-  src:url("/frontend/fonts/sms-font.eot");
-  src:url("/frontend/fonts/sms-font.eot?#iefix") format("embedded-opentype"),
-    url("/frontend/fonts/sms-font.woff") format("woff"),
-    url("/frontend/fonts/sms-font.ttf") format("truetype"),
-    url("/frontend/fonts/sms-font.svg#sms-font") format("svg");
+  src:url("/src/fonts/sms-font.eot");
+  src:url("/src/fonts/sms-font.eot?#iefix") format("embedded-opentype"),
+    url("/src/fonts/sms-font.woff") format("woff"),
+    url("/src/fonts/sms-font.ttf") format("truetype"),
+    url("/src/fonts/sms-font.svg#sms-font") format("svg");
   font-weight: normal;
   font-style: normal;
 

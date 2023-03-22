@@ -9,8 +9,8 @@
     <meta name="author" content="H.R.Shadhin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <!-- style -->
-    <link rel="shortcut icon" href="/frontend/img/favicon.png">
-    <link rel="stylesheet" href="/frontend/css/libs.css">
+    <link rel="shortcut icon" href="./src/img/favicon.png">
+    <link rel="stylesheet" href="./src/css/libs.css">
 
     <!--styles -->
 </head>
@@ -80,7 +80,7 @@
                 <div class="grid-row clear-fix">
                     <!-- logo -->
                     <a href="index.html" class="logo">
-                        <img src="/frontend/img/logo.png" data-at2x="/frontend/img/logo@2x.png" alt>
+                        <img src="./src/img/logo.png" data-at2x="./src/img/logo@2x.png" alt>
                         <h1>HR High School</h1>
                     </a>
                     <!-- / logo -->
@@ -132,7 +132,8 @@
         <!-- map -->
         <div class="container clear-fix">
             <div class="map wow fadeInUp">
-                <div id="map" class="google-map"></div>
+                <!-- <div id="map" class="google-map"></div> -->
+                <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Anjuman Islam Primary School&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
         <!-- / map -->
@@ -217,7 +218,7 @@
                 <section class="grid-col grid-col-4 footer-latest">
                     <h2 class="corner-radius">Upcoming Event</h2>
                     <article>
-                        <img src="/frontend/uploads/83x83-img-2.jpg" data-at2x="/frontend/uploads/83x83-img-2@2x.jpg" alt>
+                        <img src="./src/uploads/83x83-img-2.jpg" data-at2x="./src/uploads/83x83-img-2@2x.jpg" alt>
                         <h3>
                             <a href="event-details.html">Vestibulum volutpat est neque</a>
                         </h3>
@@ -231,7 +232,7 @@
                         <p>Sed pharetra lorem ut dolor dignissim, sit amet pretium tortor mattis.</p>
                     </article>
                     <article>
-                        <img src="/frontend/uploads/83x83-img-1.jpg" data-at2x="/frontend/uploads/83x83-img-1@2x.jpg" alt>
+                        <img src="./src/uploads/83x83-img-1.jpg" data-at2x="./src/uploads/83x83-img-1@2x.jpg" alt>
                         <h3>
                             <a href="event-details.html">Donec mollis magna quis</a>
                         </h3>
@@ -295,11 +296,11 @@
     </footer>
     <!-- / footer -->
 
-    <script src="/frontend/js/libs.js"></script>
+    <script src="./src/js/libs.js"></script>
     <script>      
         var marker;
         function initMap() {
-            var latLong = { lat: 23.7340076, lng: 90.3841824 };
+            var latLong = { lat: 29.852143729105826, lng: 31.018089661367952 };
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 15,
                 center: latLong
