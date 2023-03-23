@@ -1,0 +1,17 @@
+.content-title {
+    font-weight: bold !important;
+}
+
+.tp-caption p{
+    padding: 0.7rem;
+    border-radius: 5px;
+    background-color: rgba(128, 115, 115,.3);
+    font-size: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.teachers-img {
+    margin: 0 auto;
+    transform: rotate(270deg);
+}

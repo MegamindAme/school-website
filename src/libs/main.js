@@ -1515,7 +1515,7 @@ if ($(".contact-form").length) {
       values: $(form).serialize()
     };
     //send data to server
-    $.post("php/contacts-process.php", data, function (s_response) {
+    $.post("php/contact-us.htmls-process.php", data, function (s_response) {
       s_response = $.parseJSON(s_response);
       if (s_response.info == 'success') {
         $wrapper.addClass("message message-success").append("<div class='info-boxes confirmation-message' id='feedback-form-success'><strong>Success!</strong><br><p>Your message was successfully delivered.</p></div>");
